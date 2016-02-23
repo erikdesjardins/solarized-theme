@@ -9,12 +9,15 @@ const autoprefixer = require('autoprefixer');
 const compiled = postcss([autoprefixer]).process(sass.renderSync({ file: 'main.scss' }).css).css;
 
 const r = new Snoocore({
-	type: 'script',
-	key: process.env.REDDIT_KEY,
-	secret: process.env.REDDIT_SECRET,
-	user: process.env.REDDIT_USER,
-	pass: process.env.REDDIT_PASS,
-	scope: ['modconfig']
+	userAgent: 'linux:io.erikdesjardins.stylesheetsync:v0.0.0 (by /u/erikdesjardins)',
+	oauth: {
+		type: 'script',
+		key: process.env.REDDIT_KEY,
+		secret: process.env.REDDIT_SECRET,
+		username: process.env.REDDIT_USER,
+		password: process.env.REDDIT_PASS,
+		scope: ['modconfig']
+	}
 });
 
 r('/r/$subreddit/api/subreddit_stylesheet')
