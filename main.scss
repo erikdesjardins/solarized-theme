@@ -53,8 +53,9 @@ input,
 .linkinfo,
 .side .sidebox,
 .titlebox,
-.leavemoderator,
+.titlebox .redditname,
 .titlebox form.toggle,
+.leavemoderator,
 .sidecontentbox .content,
 .footer,
 .icon-menu a,
@@ -84,7 +85,6 @@ input,
 
 .res-nightmode .side {
 	.usertext-body ol,
-	.redditname a,
 	.usertext-body .md blockquote p,
 	h1,
 	h2,
@@ -212,17 +212,20 @@ a:hover,
 .linkinfo .downvotes,
 .thing .title:visited,
 .thing.visited .title {
-	color: $violet;
+	color: $violet !important;
 }
 
 // BLUE
 
-a,
-.tagline a,
+a {
+	color: $blue;
+}
+
 .tagline .submitter,
 .thing .title,
-.morelink a {
-	color: $blue;
+.side a,
+.footer a {
+	color: $blue !important;
 }
 
 div.thing .tagline .author.submitter {
@@ -231,9 +234,8 @@ div.thing .tagline .author.submitter {
 
 // CYAN
 
-.titlebox h1 a,
-.pagename a {
-	color: $cyan;
+.redditname a {
+	color: $cyan !important;
 	font-size: 30px;
 }
 
