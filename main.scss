@@ -85,7 +85,6 @@ input,
 
 .res-nightmode .side {
 	.usertext-body ol,
-	.redditname a,
 	.usertext-body .md blockquote p,
 	h1,
 	h2,
@@ -232,9 +231,8 @@ div.thing .tagline .author.submitter {
 
 // CYAN
 
-.titlebox h1 a,
-.pagename a {
-	color: $cyan;
+.redditname a {
+	color: $cyan !important;
 	font-size: 30px;
 }
 
