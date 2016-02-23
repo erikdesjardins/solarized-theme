@@ -27,7 +27,4 @@ r('/r/$subreddit/api/subreddit_stylesheet')
 		reason: execSync('git rev-parse HEAD', { encoding: 'utf8' }),
 		stylesheet_contents: compiled
 	})
-	.catch(e => {
-		console.error(e);
-		process.exit(1);
-	});
+	.catch(e => process.exit(1));
