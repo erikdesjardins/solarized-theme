@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const execSync = require('child_process').execSync;
 const Snoocore = require('snoocore');
 const sass = require('node-sass');
