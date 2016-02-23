@@ -1,0 +1,9 @@
+language: node_js
+node_js: stable
+before_script: gem install scss_lint
+script: npm test
+deploy:
+	provider: script
+	script: deploy.js
+	on:
+		branch: master

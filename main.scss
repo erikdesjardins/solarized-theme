@@ -1,0 +1,404 @@
+/* ======================================================================
+ * /r/solarizedtheme CSS - Based on http://ethanschoonover.com/solarized
+ * ====================================================================== */
+
+/***COLOUR SCHEME***
+	Light Mode
+		base3  #FDF6E3 - background
+		base2  #EEE8D5 - background highlights
+		base1  #93A1A1 - secondary content
+		base00 #657B83 - primary content
+		base01 #586E75 - emphasized content
+	Dark Mode
+		base03 #002B36 - background
+		base02 #073642 - background highlights
+		base01 #586E75 - secondary content
+		base0  #839496 - primary content
+		base1  #93A1A1 - emphasized content
+	Accent Colours
+		yellow  #B58900 - replaces reddit gold colour
+		orange  #CB4B16 - replaces orangered (upvotes, friends)
+		red     #DC322F - admin red, unsubscribe buttons
+		magenta #D33682 - currently selected item, active items, selected tab
+		violet  #6C71C4 - replaces periwinkle, visited posts
+		blue    #268BD2 - replaces blue links, OP colour
+		cyan    #2AA198 - subreddit name, last clicked link
+		green   #859900 - for stickied posts, moderator colour, subscribe buttons
+*/
+
+/***BACKGROUND***/
+#header-bottom-right,
+#userbarToggle,
+body,
+body .content,
+.side,
+.tabmenu li a,
+.tabmenu li.selected a,
+body.comments-page .comment,
+.RESDialogSmall.livePreview > h3 {
+	background-color: #FDF6E3 !important;
+}
+.res-nightmode #header-bottom-right,
+.res-nightmode #userbarToggle,
+body.res-nightmode,
+body.res-nightmode .content,
+.res-nightmode .thing,
+.res-nightmode .side,
+.res-nightmode .tabmenu li a,
+.res-nightmode .tabmenu li.selected a,
+body.res-nightmode.comments-page .comment,
+.res-nightmode .RESDialogSmall.livePreview > h3 {
+	background-color: #002B36 !important;
+}
+
+/***BACKGROUND HIGHLIGHTS***/
+#header,
+#siteTable .usertext-body .md,
+textarea,
+input,
+.infobar,
+.morelink,
+.linkinfo,
+.side .sidebox,
+.titlebox,
+.leavemoderator,
+.titlebox form.toggle,
+.sidecontentbox .content,
+.footer,
+.icon-menu a,
+.wiki-page-content pre,
+.usertext-edit .RESDialogSmall.livePreview .md.RESDialogContents {
+	background: #EEE8D5 !important;
+	border: none;
+}
+.res-nightmode #header,
+.res-nightmode #siteTable .usertext-body .md,
+.res-nightmode textarea,
+.res-nightmode input,
+.res-nightmode .infobar,
+.res-nightmode .morelink,
+.res-nightmode .linkinfo,
+.res-nightmode .side .sidebox,
+.res-nightmode .titlebox,
+.res-nightmode .titlebox .redditname,
+.res-nightmode .leavemoderator,
+.res-nightmode .titlebox form.toggle,
+.res-nightmode .sidecontentbox .content,
+.res-nightmode .side .thing,
+.res-nightmode .footer,
+.res-nightmode .icon-menu a,
+.res-nightmode .wiki-page-content pre,
+.res-nightmode .usertext-edit .RESDialogSmall.livePreview .md.RESDialogContents {
+	background: #073642 !important;
+	border: none !important;
+}
+
+/***PRIMARY CONTENT***/
+body,
+textarea,
+input,
+.side {
+	color: #657B83;
+}
+body.res-nightmode,
+.res-nightmode textarea,
+.res-nightmode input,
+.res-nightmode .side,
+.res-nightmode .side .usertext-body ol,
+.res-nightmode .side .redditname a,
+.res-nightmode .side .usertext-body .md blockquote p,
+.res-nightmode .side h1,
+.res-nightmode .side h2,
+.res-nightmode .side h3,
+.res-nightmode .side h4,
+.res-nightmode .side h5,
+.res-nightmode .side h6 {
+	color: #839496 !important;
+}
+
+/***SECONDARY CONTENT***/
+.tagline,
+.linkinfo .date,
+.linkinfo .shortlink,
+.domain a,
+.leavemoderator,
+.titlebox form.toggle,
+.titlebox .bottom,
+.gadget small,
+.bottommenu,
+.commentingAs,
+.debuginfo {
+	color: #93A1A1 !important;
+}
+.res-nightmode .tagline,
+.res-nightmode .linkinfo .date,
+.res-nightmode .linkinfo .shortlink,
+.res-nightmode .domain a,
+.res-nightmode .leavemoderator,
+.res-nightmode .titlebox form.toggle,
+.res-nightmode .titlebox .bottom,
+.res-nightmode .gadget small,
+.res-nightmode .bottommenu,
+.res-nightmode .commentingAs,
+.res-nightmode .debuginfo {
+	color: #586E75 !important;
+}
+.midcol div.arrow.down, .midcol div.arrow.down:hover {
+	background: url(%%spritesheet%%) bottom right !important;
+}
+.midcol div.arrow.up, .midcol div.arrow.up:hover {
+	background: url(%%spritesheet%%) bottom left !important;
+}
+
+/***EMPHASIZED CONTENT***/
+.tagline a.author,
+.entry .buttons li a,
+.commentarea .menuarea .toggle a,
+.sidecontentbox .title h1,
+.flat-vert.title,
+.linkinfo .score *,
+.RESDialogSmall > h3 {
+	color: #586E75;
+}
+.res-nightmode .tagline a.author,
+.res-nightmode .entry .buttons li a,
+.res-nightmode .commentarea .menuarea .toggle a,
+.res-nightmode .sidecontentbox .title h1,
+.res-nightmode .flat-vert.title,
+.res-nightmode .linkinfo .score *,
+.res-nightmode .RESDialogSmall > h3 {
+	color: #93A1A1;
+}
+
+/***YELLOW***/
+.buygold,
+a.give-gold {
+	color: #B58900
+}
+
+/***ORANGE***/
+.link .score.likes,
+.tagline .friend,
+.linkinfo .upvotes {
+	color: #CB4B16;
+}
+div.thing p.tagline .author.friend {
+	background-color: #CB4B16 !important;
+}
+.midcol div.arrow.upmod {
+	background-image: url(%%spritesheet%%) !important;
+	background-position: top left;
+}
+
+/***RED***/
+.tagline .admin {
+	color: #DC322F;
+}
+div.thing p.tagline a.author.admin,
+.fancy-toggle-button .remove,
+.RESshortcutside.remove,
+.RESDashboardToggle.remove {
+	background: #DC322F !important;
+}
+
+/***MAGENTA***/
+.thing div.entry.RES-keyNav-activeElement {
+	outline: none !important;
+	border-right: 10px solid #D33682 !important;
+	box-shadow: 0 0 5px 0 #D33682, 0 0 5px 0 #D33682 !important;
+}
+.tabmenu li.selected a,
+.morelink:hover a,
+a:hover,
+.tagline a:hover,
+.res-nightmode .morelink:hover a,
+.res-nightmode a:hover,
+.res-nightmode .tagline a:hover {
+	color: #D33682;
+}
+
+/***VIOLET***/
+.link .score.dislikes,
+.linkinfo .downvotes,
+.thing .title:visited,
+.thing.visited .title {
+	color: #6C71C4
+}
+.midcol div.arrow.downmod {
+	background-image: url(%%spritesheet%%) !important;
+	background-position: top right;
+}
+
+/***BLUE***/
+a,
+.tagline a,
+.tagline .submitter,
+.thing .title,
+.morelink a {
+	color: #268BD2;
+}
+div.thing .tagline .author.submitter {
+	background: #268BD2 !important;
+}
+
+/***CYAN***/
+.titlebox h1 a,
+.pagename a {
+	color: #2AA198;
+	font-size: 30px;
+}
+.link.last-clicked {
+	border: none;
+	overflow: initial;
+}
+.link.last-clicked .entry {
+	border-right: 5px solid #2AA198;
+	box-shadow: 0 0 5px 0 #2AA198;
+}
+
+/***GREEN***/
+.tagline .moderator,
+.thing.stickied.link a.title,
+.tagline .stickied-tagline,
+.bottommenu .updated {
+	color: #859900;
+}
+div.thing p.tagline .author.moderator,
+.fancy-toggle-button .add,
+.RESshortcutside,
+.RESDashboardToggle {
+	background: #859900 !important;
+}
+.thing.stickied > .entry {
+	border-right: 5px solid #859900;
+	box-shadow: 0 0 5px 0 #859900;
+}
+
+/***STYLESHEET CODE COLOURS***/
+pre.subreddit-stylesheet-source { /* Primary content */
+	color: #657B83 !important;
+}
+.res-nightmode pre.subreddit-stylesheet-source,
+.res-nightmode pre .value {
+	color: #839496 !important;
+}
+pre .comment { /* Secondary content */
+	color: #93A1A1 !important;
+}
+.res-nightmode pre .comment {
+	color: #586E75 !important;
+}
+pre .class { /* Emphasized content */
+	color: #586E75 !important;
+}
+.res-nightmode pre .class {
+	color: #93A1A1 !important;
+}
+pre .tag { /* Violet */
+	color: #6C71C4 !important;
+}
+pre .attribute { /* Green */
+	color: #859900 !important;
+}
+pre .hexcolor,
+pre .number { /* Cyan */
+	color: #2AA198 !important;
+}
+pre .id { /* Red */
+	color: #DC322F !important;
+}
+pre .string { /* Orange */
+	color: #CB4B16 !important;
+}
+
+/***HEADER***/
+#header {
+	border-bottom: 1px solid #586E75; /* Emphasized content */
+}
+.res-nightmode #header {
+	border-bottom-color: #93A1A1;
+}
+.tabmenu li.selected a {
+	border-color: #586E75; /* Emphasized content */
+	border-bottom-width: 0;
+	padding-bottom: 1px;
+}
+.res-nightmode .tabmenu li.selected a {
+	border: none;
+}
+#header-bottom-right,
+#userbarToggle {
+	border: none !important;
+	border-radius: 0 !important;
+}
+
+/***HORIZONTAL RULE***/
+hr {
+	border-style:none;
+	border-top: 1px solid #586E75; /* Emphasized content */
+}
+.res-nightmode hr {
+	border-color: #93A1A1;
+}
+
+/***SIDEBAR SPACING***/
+.titlebox {
+	padding: 5px;
+}
+.gadget .entry {
+	margin: 0;
+}
+.side { /* Necessary for shading of even posts */
+	margin-left: 0;
+	padding-left: 10px;
+}
+
+/***LIVE PREVIEW***/
+.RESDialogSmall.livePreview {
+	border: none;
+}
+.RESDialogSmall.livePreview > h3 {
+	border: none;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.usertext-edit .RESDialogSmall.livePreview .md.RESDialogContents {
+	padding-top: 20px
+}
+
+/***SQUARE BORDERS***/
+* {
+	border-radius: 0 !important;
+}
+
+/***HIDING ELEMENTS***/
+#header-img,
+.thumbnail.self,
+.thumbnail.default,
+.nub,
+.sidebox.create .spacer,
+.gadget .midcol,
+.collapse-button {
+	display: none !important;
+}
+
+/***INLINE SUBSCRIBERS***/
+.subscribers .word,
+.users-online .word {
+	display: none;
+}
+.subscribers .number:after {
+	content: ' subscribers';
+}
+.users-online {
+	display: inline;
+}
+.users-online .number:before {
+	content: ' (';
+}
+.users-online .number:after {
+	content: ' online)';
+}

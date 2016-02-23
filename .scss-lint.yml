@@ -1,0 +1,24 @@
+# Inherits from default config
+# https://github.com/brigade/scss-lint/blob/master/config/default.yml
+
+scss_files: '*.scss'
+
+linters:
+  Indentation:
+    character: tab
+    width: 1
+
+  LeadingZero:
+    style: include_zero
+
+  PropertySortOrder:
+    order: smacss
+
+  SelectorFormat:
+    enabled: false
+
+  IdSelector:
+    enabled: false
+
+  ImportantRule:
+    enabled: false

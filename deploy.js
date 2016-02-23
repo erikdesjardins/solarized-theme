@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+const execSync = require('child_process').execSync;
+const Snoocore = require('snoocore');
+const sass = require('node-sass');
+const postcss = require('postcss');
+const autoprefixer = require('autoprefixer');
+
+const compiled = postcss([autoprefixer]).process(sass.renderSync({ file: 'main.scss' }).css).css;
+
+const r = new Snoocore({
+	type: 'script',
+	key: process.env.REDDIT_KEY,
+	secret: process.env.REDDIT_SECRET,
+	user: process.env.REDDIT_USER,
+	pass: process.env.REDDIT_PASS,
+	scope: ['modconfig']
+});
+
+r('/r/$subreddit/api/subreddit_stylesheet')
+	.post({
+		$subreddit: 'solarizedtheme',
+		op: 'save',
+		reason: execSync('git rev-parse HEAD', { encoding: 'utf8' }),
+		stylesheet_contents: compiled
+	})
+	.catch(e => {
+		console.error(e);
+		process.exit(1);
+	});
