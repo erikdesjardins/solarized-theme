@@ -217,12 +217,15 @@ a:hover,
 
 // BLUE
 
-a,
-.tagline a,
+a {
+	color: $blue;
+}
+
 .tagline .submitter,
 .thing .title,
-.morelink a {
-	color: $blue;
+.side a,
+.footer a {
+	color: $blue !important;
 }
 
 div.thing .tagline .author.submitter {
