@@ -212,7 +212,7 @@ a:hover,
 .linkinfo .downvotes,
 .thing .title:visited,
 .thing.visited .title {
-	color: $violet;
+	color: $violet !important;
 }
 
 // BLUE
