@@ -11,14 +11,31 @@ linters:
   LeadingZero:
     style: include_zero
 
+  BorderZero:
+    convention: none
+
   PropertySortOrder:
     order: smacss
 
+  # Disabled
+
   SelectorFormat:
+    enabled: false
+
+  SelectorDepth:
     enabled: false
 
   IdSelector:
     enabled: false
 
   ImportantRule:
+    enabled: false
+
+  QualifyingElement:
+    enabled: false
+
+  UrlQuotes:
+    enabled: false
+
+  UnnecessaryParentReference:
     enabled: false
