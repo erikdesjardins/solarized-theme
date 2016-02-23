@@ -134,25 +134,25 @@ input,
 
 // VOTE ARROWS
 
-.midcol div.arrow.down,
-.midcol div.arrow.down:hover {
+.midcol .arrow.down,
+.midcol .arrow.down:hover {
 	// secondary content
 	background: url(%%spritesheet%%) bottom right !important;
 }
 
-.midcol div.arrow.up,
-.midcol div.arrow.up:hover {
+.midcol .arrow.up,
+.midcol .arrow.up:hover {
 	// secondary content
 	background: url(%%spritesheet%%) bottom left !important;
 }
 
-.midcol div.arrow.downmod {
+.midcol .arrow.downmod {
 	// violet
 	background-image: url(%%spritesheet%%) !important;
 	background-position: top right;
 }
 
-.midcol div.arrow.upmod {
+.midcol .arrow.upmod {
 	// orange
 	background-image: url(%%spritesheet%%) !important;
 	background-position: top left;
