@@ -36,6 +36,3 @@ linters:
 
   UrlQuotes:
     enabled: false
-
-  UnnecessaryParentReference:
-    enabled: false
