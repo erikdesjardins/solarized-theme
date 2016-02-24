@@ -22,7 +22,7 @@ r('/r/$subreddit/api/subreddit_stylesheet')
 	.post({
 		$subreddit: 'solarizedtheme',
 		op: 'save',
-		reason: execSync('git rev-parse HEAD', { encoding: 'utf8' }),
+		reason: execSync('git rev-parse HEAD', { encoding: 'utf8' }).trim(),
 		stylesheet_contents: compiled
 	})
 	.catch(e => process.exit(1));
