@@ -148,14 +148,12 @@ input,
 
 .midcol .arrow.downmod {
 	// violet
-	background-image: url(%%spritesheet%%) !important;
-	background-position: top right;
+	background: url(%%spritesheet%%) top right !important;
 }
 
 .midcol .arrow.upmod {
 	// orange
-	background-image: url(%%spritesheet%%) !important;
-	background-position: top left;
+	background: url(%%spritesheet%%) top left !important;
 }
 
 
