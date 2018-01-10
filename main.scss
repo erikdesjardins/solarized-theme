@@ -234,12 +234,11 @@ div.thing .tagline .author.submitter {
 
 .redditname a {
 	color: $cyan !important;
-	font-size: 30px;
 }
 
 .link.last-clicked {
-	border: none;
 	overflow: initial;
+	border: none;
 
 	.entry {
 		border-right: 5px solid $cyan;
