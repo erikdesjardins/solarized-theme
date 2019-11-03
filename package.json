@@ -4,7 +4,7 @@
   "description": "For reddit",
   "private": true,
   "scripts": {
-    "test": "scss-lint"
+    "test": "sass-lint -v -q *.scss"
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,10 @@
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
-    "autoprefixer": "^6.3.3",
-    "node-sass": "^3.4.2",
-    "postcss": "^5.0.16",
+    "autoprefixer": "^9.7.1",
+    "postcss": "^7.0.21",
+    "sass": "^1.23.3",
+    "sass-lint": "^1.13.1",
     "snoocore": "^3.3.1"
   }
 }

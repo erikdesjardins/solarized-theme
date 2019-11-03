@@ -1,6 +1,6 @@
 const execSync = require('child_process').execSync;
 const Snoocore = require('snoocore');
-const sass = require('node-sass');
+const sass = require('sass');
 const postcss = require('postcss');
 const autoprefixer = require('autoprefixer');
 
@@ -25,4 +25,7 @@ r('/r/$subreddit/api/subreddit_stylesheet')
 		reason: execSync('git rev-parse HEAD', { encoding: 'utf8' }).trim(),
 		stylesheet_contents: compiled
 	})
-	.catch(e => process.exit(1));
+	.catch(e => {
+		console.error(e);
+		process.exitCode = 1;
+	});
